@@ -7,6 +7,8 @@
   "assets": {
     "directory": "."
   },
+  // Al declarar rutas, wrangler apaga workers.dev salvo que se indique aquí.
+  "workers_dev": true,
   "routes": [
     { "pattern": "finncapitel.com/*", "zone_name": "finncapitel.com" },
     { "pattern": "www.finncapitel.com/*", "zone_name": "finncapitel.com" }
