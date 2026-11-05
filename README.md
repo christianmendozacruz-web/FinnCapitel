@@ -39,9 +39,11 @@ git push
 
 Cloudflare despliega solo. El avance se ve en **Workers & Pages → finn-capitel → Deployments**.
 
-## Dominio propio (opcional)
+## Dominio
 
-En **finn-capitel → Settings → Domains & Routes → Add → Custom domain**, escribe el dominio. El dominio debe estar administrado en la misma cuenta de Cloudflare.
+El sitio responde en `finncapitel.com` y `www.finncapitel.com` mediante las rutas declaradas en `wrangler.jsonc`. Los registros A de la raíz siguen en el DNS, pero el Worker atiende todo el tráfico web, así que no se usan.
+
+Las rutas no afectan al correo de Microsoft 365 (MX, SPF, DMARC, autodiscover). No borres esos registros.
 
 ## Volver a una versión anterior
 
