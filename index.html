@@ -169,6 +169,22 @@ section{padding:110px 0}
 .term{padding:28px 30px;border-radius:var(--r-md);border:1px solid #ffffff1f}
 .term small{color:#ffffff8a;font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
 .term b{display:block;font-size:1.9rem;font-weight:800;letter-spacing:-.03em;color:#fff;margin-top:6px}
+.terms-2{grid-template-columns:repeat(2,1fr);margin-top:20px}
+.models-head{margin-top:90px;margin-bottom:30px}
+.models-head h3{font-size:clamp(1.8rem,3.2vw,2.6rem);font-weight:800;letter-spacing:-.03em;color:#fff}
+.models-head p{color:#ffffffa8;margin-top:10px;max-width:520px}
+.models{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.model{position:relative;padding:40px;border-radius:var(--r-lg);background:#222a26;border:1px solid #ffffff12;display:flex;flex-direction:column}
+.model.pro{background:linear-gradient(160deg,#0DA5A533,#222a26 60%);border-color:var(--tide)}
+.model .pill-m{align-self:flex-start;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:7px 14px;border-radius:999px;background:#ffffff14;color:#ffffffcc}
+.model.pro .pill-m{background:var(--tide);color:#fff}
+.model .range{margin-top:26px;color:#ffffffb3;font-weight:600;font-size:1.05rem}
+.model .rate{font-size:clamp(3.4rem,7vw,5.2rem);font-weight:900;letter-spacing:-.05em;line-height:1;color:#fff;margin-top:10px}
+.model .rate small{display:block;font-size:1rem;font-weight:700;letter-spacing:0;color:var(--tide);margin-top:12px}
+.model ul{list-style:none;margin-top:28px;padding-top:24px;border-top:1px solid #ffffff1a;display:grid;gap:12px}
+.model li{display:flex;gap:10px;align-items:flex-start;color:#ffffffd9}
+.model li svg{flex:0 0 20px;width:20px;height:20px;margin-top:2px;color:var(--tide)}
+.model li.no svg{color:#ffffff66}
 
 /* BACKING */
 .back{display:grid;grid-template-columns:1fr 1fr;gap:20px}
@@ -245,7 +261,7 @@ footer{background:var(--obsidian);color:#ffffff99;padding:80px 0 36px;font-size:
   .c-white{grid-template-columns:1fr}
   .slider{grid-template-columns:1fr}.stage{min-height:300px}.copy{min-height:290px;padding:36px 28px}.txt{inset:36px 28px auto 28px}.txt h3{font-size:1.7rem}
   .tabs{grid-template-columns:repeat(4,1fr);gap:10px}.tab{font-size:0}.tab b{font-size:.9rem}
-  .stats-grid,.terms{grid-template-columns:1fr}.term b{font-size:1.5rem}
+  .stats-grid,.terms,.models{grid-template-columns:1fr}.term b{font-size:1.5rem}.model{padding:30px}.models-head{margin-top:60px}
   section{padding:80px 0}
   .cta-box{padding:80px 26px}
 }
@@ -271,6 +287,7 @@ footer{background:var(--obsidian);color:#ffffff99;padding:80px 0 36px;font-size:
       <ul>
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#modelos">Modelos</a></li>
         <li><a href="#respaldo">Respaldo</a></li>
         <li><a href="#preguntas">Preguntas</a></li>
       </ul>
@@ -300,15 +317,15 @@ footer{background:var(--obsidian);color:#ffffff99;padding:80px 0 36px;font-size:
         <a class="btn btn-line" href="#como-funciona">Cómo funciona</a>
       </div>
       <div class="trust">
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Lote escriturado a tu nombre</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Garantía de terreno desde $130K USD</span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Acompañamiento MX · EE.UU.</span>
       </div>
     </div>
     <div class="hero-art">
       <div class="ph ph-a" data-par="0.06"><img src="assets/person.jpg" alt="Asesor de Finn Capitel" style="object-position:68% 30%"></div>
       <div class="ph ph-b" data-par="-0.08"><img src="assets/towers.jpg" alt="Edificios"></div>
-      <div class="chip chip-1"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></div><div><b>Desde $260K USD</b><small>Monto de inversión</small></div></div>
-      <div class="chip chip-2"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13"/></svg></div><div><b>Activo respaldado</b><small>Escritura a tu nombre</small></div></div>
+      <div class="chip chip-1"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></div><div><b>Desde $50K USD</b><small>Monto de inversión</small></div></div>
+      <div class="chip chip-2"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13"/></svg></div><div><b>Hasta 14.8% anual</b><small>Rendimiento según el modelo</small></div></div>
     </div>
   </div>
 </header>
@@ -322,9 +339,9 @@ footer{background:var(--obsidian);color:#ffffff99;padding:80px 0 36px;font-size:
 
 <div class="stats">
   <div class="wrap stats-grid">
-    <div class="stat rv"><div class="num">$<span data-count="260000">0</span><small>USD</small></div><p>Monto de inversión a partir de</p></div>
+    <div class="stat rv"><div class="num">$<span data-count="50000">0</span><small>USD</small></div><p>Monto de inversión a partir de</p></div>
     <div class="stat rv" style="--d:.1s"><div class="num"><span data-count="12">0</span><small>meses</small></div><p>Plazo estimado desde el primer pago</p></div>
-    <div class="stat rv" style="--d:.2s"><div class="num"><span data-count="2">0</span><small>países</small></div><p>Acompañamiento administrativo en México y EE.UU.</p></div>
+    <div class="stat rv" style="--d:.2s"><div class="num">14.8<small>% anual</small></div><p>Rendimiento con garantía de terreno, desde $130,000 USD</p></div>
   </div>
 </div>
 
@@ -342,7 +359,7 @@ footer{background:var(--obsidian);color:#ffffff99;padding:80px 0 36px;font-size:
       <div class="card c-mist rv" style="--d:.1s">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div>
         <h3>Respaldo en activos</h3>
-        <p>Tu inversión está ligada a un lote escriturado a tu nombre o al de tu empresa.</p>
+        <p>Desde $130,000 USD, tu inversión cuenta con garantía de terreno a tu nombre.</p>
       </div>
       <div class="card c-dark rv" style="--d:.2s">
         <img class="iso" src="assets/iso.svg" alt="" aria-hidden="true">
@@ -388,13 +405,34 @@ footer{background:var(--obsidian);color:#ffffff99;padding:80px 0 36px;font-size:
     </div>
     <div class="slider rv" id="slider">
       <div class="stage"><img src="assets/desk.jpg" alt="" class="on"><img src="assets/lanyard.jpg" alt="" class=""><img src="assets/stationery.jpg" alt="" class=""><img src="assets/stairs.jpg" alt="" class=""></div>
-      <div class="copy"><div class="txt on"><span class="big">01</span><h3>Asesoría inicial</h3><p>Conversamos sobre tus objetivos y te presentamos el proyecto y su ficha de inversión.</p></div><div class="txt"><span class="big">02</span><h3>Aportación de capital</h3><p>Realizas tu inversión con acompañamiento administrativo en México y en Estados Unidos.</p></div><div class="txt"><span class="big">03</span><h3>Escrituración</h3><p>El lote se escritura a tu nombre o al de tu empresa, como respaldo de tu inversión.</p></div><div class="txt"><span class="big">04</span><h3>Desarrollo</h3><p>Ejecutamos el desarrollo inmobiliario, con un plazo estimado de 12 meses desde tu primer pago.</p></div></div>
+      <div class="copy"><div class="txt on"><span class="big">01</span><h3>Asesoría inicial</h3><p>Conversamos sobre tus objetivos y te presentamos el proyecto y su ficha de inversión.</p></div><div class="txt"><span class="big">02</span><h3>Aportación de capital</h3><p>Realizas tu inversión con acompañamiento administrativo en México y en Estados Unidos.</p></div><div class="txt"><span class="big">03</span><h3>Escrituración</h3><p>En el modelo desde $130,000 USD, el terreno queda en garantía a tu nombre, como respaldo de tu inversión.</p></div><div class="txt"><span class="big">04</span><h3>Desarrollo</h3><p>Ejecutamos el desarrollo inmobiliario, con un plazo estimado de 12 meses desde tu primer pago.</p></div></div>
     </div>
     <div class="tabs rv" id="tabs"><button class="tab on" data-i="0"><span class="bar"><i></i></span><b>01</b> Asesoría inicial</button><button class="tab" data-i="1"><span class="bar"><i></i></span><b>02</b> Aportación de capital</button><button class="tab" data-i="2"><span class="bar"><i></i></span><b>03</b> Escrituración</button><button class="tab" data-i="3"><span class="bar"><i></i></span><b>04</b> Desarrollo</button></div>
-    <div class="terms">
-      <div class="term rv"><small>Monto</small><b>Desde $260,000 USD</b></div>
-      <div class="term rv" style="--d:.1s"><small>Plazo estimado</small><b>12 meses</b></div>
-      <div class="term rv" style="--d:.2s"><small>Tu participación</small><b>Solo capital</b></div>
+    <div class="models-head" id="modelos">
+      <h3 class="rv">Dos modelos de inversión</h3>
+      <p class="rv" style="--d:.1s">Elige según el monto que quieras invertir.</p>
+    </div>
+    <div class="models">
+      <div class="model rv">
+        <span class="pill-m">Modelo 1</span>
+        <div class="range">$50,000 – $129,999 USD</div>
+        <div class="rate">12.8%<small>rendimiento anual</small></div>
+        <ul>
+          <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg>Sin garantía de terreno</li>
+        </ul>
+      </div>
+      <div class="model pro rv" style="--d:.1s">
+        <span class="pill-m">Modelo 2</span>
+        <div class="range">$130,000 USD en adelante</div>
+        <div class="rate">14.8%<small>rendimiento anual</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12l5 5L20 7"/></svg>Con garantía de terreno a nombre del inversionista</li>
+        </ul>
+      </div>
+    </div>
+    <div class="terms terms-2">
+      <div class="term rv"><small>Plazo estimado</small><b>12 meses</b></div>
+      <div class="term rv" style="--d:.1s"><small>Tu participación</small><b>Solo capital</b></div>
     </div>
   </div>
 </section>
@@ -409,7 +447,7 @@ footer{background:var(--obsidian);color:#ffffff99;padding:80px 0 36px;font-size:
       <div class="card c-mist rv">
         <span class="pill">Respaldo</span>
         <h3>Un activo real detrás de tu inversión</h3>
-        <p>El lote se escritura a nombre del inversionista o de una empresa de su propiedad.</p>
+        <p>En el modelo de $130,000 USD en adelante, la inversión cuenta con garantía de terreno a nombre del inversionista.</p>
         <ul>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12l5 5L20 7"/></svg>Activo inmobiliario tangible en Estados Unidos</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12l5 5L20 7"/></svg>Documentación formal en cada etapa</li>
@@ -443,9 +481,10 @@ footer{background:var(--obsidian);color:#ffffff99;padding:80px 0 36px;font-size:
       <p class="sub rv" style="--d:.1s;margin-top:20px">¿Tienes otra duda? Escríbenos por WhatsApp y te respondemos.</p>
     </div>
     <div class="faq rv">
-      <details><summary>¿Cuál es el monto mínimo de inversión?<span class="pm"></span></summary><div class="ans"><p>Las inversiones son a partir de $260,000 dólares.</p></div></details>
+      <details><summary>¿Cuál es el monto mínimo de inversión?<span class="pm"></span></summary><div class="ans"><p>Las inversiones son a partir de $50,000 dólares. Hay dos modelos: de $50,000 a $129,999 dólares, sin garantía de terreno y con 12.8% de rendimiento anual; y de $130,000 dólares en adelante, con garantía de terreno a nombre del inversionista y 14.8% de rendimiento anual.</p></div></details>
+      <details><summary>¿Cuál es el rendimiento?<span class="pm"></span></summary><div class="ans"><p>Depende del modelo: 12.8% anual para inversiones de $50,000 a $129,999 dólares, y 14.8% anual para inversiones de $130,000 dólares en adelante.</p></div></details>
       <details><summary>¿Cuál es el plazo de la inversión?<span class="pm"></span></summary><div class="ans"><p>El plazo estimado es de 12 meses a partir del primer pago. Al ser un estimado, puede variar.</p></div></details>
-      <details><summary>¿Qué respalda mi inversión?<span class="pm"></span></summary><div class="ans"><p>El lote se escritura a tu nombre o al de una empresa de tu propiedad.</p></div></details>
+      <details><summary>¿Qué respalda mi inversión?<span class="pm"></span></summary><div class="ans"><p>En el modelo de $130,000 dólares en adelante, tu inversión cuenta con garantía de terreno a tu nombre. El modelo de $50,000 a $129,999 dólares no incluye garantía de terreno.</p></div></details>
       <details><summary>¿Tengo que participar en la operación del proyecto?<span class="pm"></span></summary><div class="ans"><p>No. Tu participación es únicamente la aportación del capital.</p></div></details>
       <details><summary>¿Puedo invertir si vivo fuera de México?<span class="pm"></span></summary><div class="ans"><p>Sí. Trabajamos con inversionistas nacionales y extranjeros, y te acompañamos en los temas administrativos en México y en Estados Unidos.</p></div></details>
       <details><summary>¿Cuáles son los riesgos?<span class="pm"></span></summary><div class="ans"><p>Los principales riesgos son externos a la inversión, como crisis económicas o aumentos excesivos en el costo de los materiales de construcción.</p></div></details>
